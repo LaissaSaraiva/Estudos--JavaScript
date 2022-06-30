@@ -7,7 +7,7 @@ console.log(nome.length);
 console.log(nome.toLowerCase());
 
 var nomeMinusculo = nome.toLowerCase();
-
+           
 //  NÚMEROS - Por um breve momento o número é envolvido em um Objeto (coerção), tendo acesso assim as suas propriedades e métodos
 
 var numero = 1.8;
