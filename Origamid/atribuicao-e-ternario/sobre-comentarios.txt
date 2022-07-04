@@ -1,0 +1,10 @@
+
+Comentários servem para explicar o código
+Não é legal deixar linhas de código comentadas no arquivo final
+
+
+// Comentário de uma linha
+
+/*
+Comentário de várias linhas
+*/
