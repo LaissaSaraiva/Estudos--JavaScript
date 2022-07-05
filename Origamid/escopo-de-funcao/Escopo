@@ -1,0 +1,17 @@
+ESCOPO
+
+Qual o motivo do espoco / Evitar conflito de nome;
+
+Imagine usar um plugin externo com o mesmo nome da função que vc criou? quebraria o teu site.
+
+Evitar conflito em nome de variaveis
+
+-- Var Global
+'use strict' - para evitar erros 
+não criar variavel sem a palavra chave.
+
+
+
+Escopo de Funçõa (pai)
+
+Escopo de Bloco
