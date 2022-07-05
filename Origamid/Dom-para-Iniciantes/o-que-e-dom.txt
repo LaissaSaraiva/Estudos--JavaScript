@@ -1,0 +1,18 @@
+DOM PARA INICIANTES
+
+O que é o DOM?  Document Object Model
+
+é uma interface que representa documentos HTML. Com ela é possível manipular a estrutura, estilo e conteúdo desses documentos.
+Cada item, retorna objetos, cm seus métodos e propriedades.
+
+O objeto máximo é o  window = objeto global/ por isso não precisamos chamar ele na frente dos seus métodos e propriedades.
+
+
+**** WINDOW E DOCUMENT ***
+
+São os objetos principais do DOM, boa parte da manipulação é feita através dos seus métodos e propriedades.
+
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_Objects
+
