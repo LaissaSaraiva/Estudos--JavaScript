@@ -33,7 +33,6 @@ animais.addEventListener("click", callbackPropriedades);
 
 // Event.prevent default - previne comportamento padrão do evento no browser
 
-
 const linkExterno = document.querySelector('a[href^="http"]');
 
 function handleLinkExterno(evento) {
@@ -43,9 +42,7 @@ function handleLinkExterno(evento) {
 
 linkExterno.addEventListener("click", handleLinkExterno);
 
-
 // this em evento está relacioinado ao elemento HTMl selecionada. A mesma coisas que evento. currentTarget;
-
 
 // Diferentes Eventos
 // https://developer.mozilla.org/en-US/docs/Web/Events
@@ -54,23 +51,29 @@ const h1 = document.querySelector("h1");
 
 function handleEvent(evento) {
   console.log(evento.type, evento);
-  
 }
 
-h1.addEventListener('click', handleEvent);
-h1.addEventListener('mouseenter', handleEvent);
-h1.addEventListener('mousemove', handleEvent);
+h1.addEventListener("click", handleEvent);
+h1.addEventListener("mouseenter", handleEvent);
+h1.addEventListener("mousemove", handleEvent);
 
-window.addEventListener('scroll', handleEvent);
-window.addEventListener('resize', handleEvent);
-
+window.addEventListener("scroll", handleEvent);
+window.addEventListener("resize", handleEvent);
 
 function handleKeyboard(evento) {
-
-  if(evento.key === 'f') {
+  if (evento.key === "f") {
     document.body.classList.toggle("fullscreen");
   }
-console.log(evento.key);
+  console.log(evento.key);
 }
-window.addEventListener('keydown', handleKeyboard);
+window.addEventListener("keydown", handleKeyboard);
 
+const imgs = document.querySelectorAll("img");
+
+function handleImgs(evento) {
+  console.log(evento.target.getAttribute("src"));
+}
+
+imgs.forEach(function (img) {
+  img.addEventListener("click", handleImgs);
+});
