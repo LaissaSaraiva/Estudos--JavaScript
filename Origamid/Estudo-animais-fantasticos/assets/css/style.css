@@ -27,6 +27,11 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
+.zoom {
+
+  font-size: 1.3rem;
+}
+
 .menu {
   grid-column: 3/5;
   background-color: var(--bg-color-amarelo);

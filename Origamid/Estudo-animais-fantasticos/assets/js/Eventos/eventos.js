@@ -18,18 +18,18 @@ imagem.addEventListener("click", callback); // não chama a função com (), fun
 
 // PROPRIEDADES DO EVENT
 
-const animais = document.querySelector(".animais-lista");
+const animaisLista = document.querySelector(".animais-lista");
 
-console.log(animais);
+console.log(animaisLista);
 
 function callbackPropriedades(event) {
-  const currentTarget = event.currentTarget; //this (elemento html)
+  const currentTarget = event.currentTarget; //this (elemento html selecionado no query selector)
   const target = event.target; //onde o clique ocorreu (imagem precisa)
   const type = event.type;
   const path = event.path;
   console.log(currentTarget, target, type, path);
 }
-animais.addEventListener("click", callbackPropriedades);
+// animaisLista.addEventListener("click", callbackPropriedades);
 
 // Event.prevent default - previne comportamento padrão do evento no browser
 
@@ -38,6 +38,8 @@ const linkExterno = document.querySelector('a[href^="http"]');
 function handleLinkExterno(evento) {
   evento.preventDefault(); // previne um padrão recarregamento de pgan, por ex;
   console.log("clicou");
+  console.log(evento);
+  console.log(this.getAttribute('href'));
 }
 
 linkExterno.addEventListener("click", handleLinkExterno);
@@ -67,6 +69,10 @@ function handleKeyboard(evento) {
   console.log(evento.key);
 }
 window.addEventListener("keydown", handleKeyboard);
+
+
+// ADDEVENTLISTENER
+// Adiciona uma função ao elemento, esta chamada de callback, que será ativada assim que certo evento ocorrer neste elemento.
 
 const imgs = document.querySelectorAll("img");
 
